@@ -483,7 +483,7 @@ def train_by_chain_thaw(model, train_gen, val_gen, loss_op, patience, nb_epochs,
             print("Loaded weights from {}".format(checkpoint_path))
 
 def fit_model(model, loss_op, optim_op, train_gen, val_gen, epochs,
-              checkpoint_path, patience):
+              checkpoint_path, patience,verbose):
     """ Analog to Keras fit_generator function.
 
     # Arguments:

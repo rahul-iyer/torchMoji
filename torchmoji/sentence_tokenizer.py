@@ -116,7 +116,9 @@ class SentenceTokenizer():
         # this is not necessarily the case for custom wordgenerators as they
         # may filter the sentences etc.
         if not self.uses_custom_wordgen and not self.ignore_sentences_with_only_custom:
-            assert len(sentences) == next_insert
+            # assert len(sentences) == next_insert
+            tokens = tokens[:next_insert]
+            infos = infos[:next_insert]
         else:
             # adjust based on actual tokens received
             tokens = tokens[:next_insert]

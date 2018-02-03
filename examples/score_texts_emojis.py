@@ -25,7 +25,8 @@ TEST_SENTENCES = ['I love mom\'s cooking',
                   'I love messing with yo mind!!',
                   'I love you and now you\'re just gone..',
                   'This is shit',
-                  'This is the shit']
+                  'This is the shit',
+                  "Let's keep that in the README for now, Contributing.md is more a guideline for pull requests. At that step, it's probable that contributors will have already tested their changes (I hope)."]
 
 
 def top_elements(array, k):
